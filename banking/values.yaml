@@ -2,5 +2,5 @@ spec:
   destination:
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/hilmitekin82/bankingapps
+    repoURL: https://github.com/hilmitekin82/banking
     targetRevision: HEAD
