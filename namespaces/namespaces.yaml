@@ -1,20 +1,20 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: banking
+  name: banking-services
   annotations:
-    argocd.argoproj.io/sync-wave: "-1"
+    argocd.argoproj.io/sync-wave: "-2"
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: engagement
+  name: engagement-services
   annotations:
-    argocd.argoproj.io/sync-wave: "-1"
+    argocd.argoproj.io/sync-wave: "-2"
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
   name: common-services
   annotations:
-    argocd.argoproj.io/sync-wave: "-1"
+    argocd.argoproj.io/sync-wave: "-2"

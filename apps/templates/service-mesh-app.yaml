@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sample-banking-app
+  name: service-mesh
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: banking
+    namespace: default
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: sample-banking-app
+    path: service-mesh
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
